@@ -1,0 +1,280 @@
+
+    *{
+        margin: 0;
+        font-family: 'Outfit', sans-serif;
+    }
+    html{
+        scroll-behavior: smooth;
+        
+    }    
+   
+    section{
+        width: 100%;
+        float: left;
+        height: 100vh;
+        position: relative;
+        overflow-x:hidden;
+        
+    }
+    #section1, #section3, #section5, #section7, #section9{
+        background-image: linear-gradient(to right,black,#230826,#320338,rgb(19, 17, 17));
+    }
+    #section2, #section4, #section6, #section8,#section10{
+        background-image: linear-gradient(to right,#2a042e,rgb(12, 7, 7),rgb(19, 17, 17),#26022b);
+    }
+    #navbar{
+        display: inline-flex;
+        position: fixed;
+        z-index: 1000;
+    }
+    #icon{
+        height: 7em;
+        width: 20em; 
+        float: left;
+        padding: 15px;
+        position: relative;
+        left: 50px;
+        animation: fromLeft 2s;
+    }
+    @keyframes fromLeft{
+        from{ transform: translateX(-100px);}
+        50% {transform: translateX(20px);}
+    }
+    #gap{
+        width: 600px;
+        position: relative;
+    }
+    #lists{
+        padding-top: 25px;
+        display: flex;
+    }
+    #lists a{
+        font-weight: 200;
+        font-style: normal;
+        padding-right: 25px;
+        padding-top: 35px;
+        color: rgb(255, 255, 255);
+        display: inline-block;
+        letter-spacing: 3px;
+        font-size: 20px;
+        text-decoration: none;
+        list-style-type: none;
+        text-align: right;
+        text-shadow: 3px 3px 5px #000000;
+        animation: fadein 2s;
+    }
+    @keyframes fadein{
+        0% { opacity: 0;}
+        100% { opacity: 100%;}
+    }
+    #navbar #lists a:hover
+    {
+        color: rgba(255, 255, 255, 0.774);
+        text-shadow: 3px 3px 5px #ffffff;
+        
+    }
+    .container{
+        top: 22%;
+        left: 11%;
+        position: relative;
+        border-radius: 18px;
+        filter: drop-shadow(5px 5px 5px black);
+        margin: 20px;
+               
+    }
+    #container1{
+        background-image: url(10032201.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 450px;
+        width: 1000px; 
+    }
+    #container1 a div{
+        padding: 10px;
+        height: 40px;
+        width: 80px;
+        border-radius: 25%;
+        background-color: rgba(0, 0, 0, 0.116);
+        
+    }
+    #container1 a{
+        color: white;
+        position: relative;
+        left: 450px;
+        top: 180px;
+        font-size: 18px;
+        text-decoration: none;
+        text-align: justify;
+        text-shadow: 3px -3px 5px rgb(255, 255, 255), -3px +3px 5px rgb(255, 255, 255);
+        animation: blink infinite 1.5s;
+    }
+    @keyframes blink{
+        50%{  opacity: 0;}
+    }
+    #container1 a div:hover{
+        text-shadow: 3px 3px 5px black;
+        box-shadow:
+             0 0 7px #fff,
+             0 0 10px #fff,
+             0 0 21px #fff,
+             0 0 42px rgba(255, 255, 255, 0.568),
+             0 0 82px rgba(255, 255, 255, 0.568),
+             0 0 92px rgba(255, 255, 255, 0.568),
+             0 0 102px rgba(255, 255, 255, 0.568),
+             0 0 151px rgba(255, 255, 255, 0.568);
+        background-color: rgb(255, 255, 255);
+        mix-blend-mode: screen;
+        color: black;
+        
+    }
+    .container h1{
+        white-space: nowrap;
+        color: white;
+        font-size: 2em;
+    }
+    #container1 h1{
+        overflow: hidden;
+        border-right: .1em solid orange;
+        animation: type 4s steps(40,end),
+        cursor .75s step-end ;
+    }
+    .container p{
+        padding-top: 20px;
+        justify-content: center;
+        color: white;
+        display: flex;
+        font-size: 1em;
+        letter-spacing: 1px;
+        line-height: 23px;
+
+    }
+    
+    #container5 p,#container5 h1,#container6 p,#container6 h1,
+    #container10 p,#container10 h1{
+        color: black;
+    }
+    .container #textbox {
+        text-align: center;
+        position: absolute;
+        padding-top: 50px;
+        left: 650px;
+        top: 0;
+        height: 400px;
+        width: 300px;
+    }
+    
+    @keyframes type{
+        from {width: 0}
+        to {width: 100%;}
+    }
+    @keyframes cursor{
+        from, to {border-color: transparent;}
+        50% {border-color: orange}
+    }
+    #container2,#container3,#container4,#container5,#container6,#container7,#container8,#container9,#container10{
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 450px;
+        width: 1000px; 
+    }
+    #container2{
+        background-image: url(1690804562710.jpeg);
+    }
+    #container3{
+        background-image: url(699861.jpg);
+    }
+    #container4{
+        background-image: url(wp1808936-captain-america-wallpapers-01.jpeg);
+    }
+    #container5{
+        background-image: url(wp6556154-hulk-4k-hd-wallpapers.jpg);
+    }
+    #container6{
+        background-image: url(wp5760432-black-widow-4k-hd-wallpapers.jpg);
+    }
+    #container7{
+        background-image: url(wp8863618-hawkeye-ronin-wallpapers.jpg);
+    }
+    #container8, #container9, #container10{
+        background-color: hsla(0, 0%, 100%, 0.178);
+    }
+    #container2 a img, #container3 a img,
+    #container4 a img, #container5 a img,
+    #container6 a img, #container7 a img,
+    #container8 a img, #container9 a img,#container10 a img{
+        filter: brightness(200%);
+        height: 30px;
+        width: 30px;
+        position: relative;
+        left: 50%;
+        top: 90%;
+        filter: drop-shadow(3px 3px 5px #ffffff);
+        animation: blink infinite 1.5s;
+    } 
+
+    #container8 .box,#container9 .box{
+        display: inline-flex;
+        margin: 50px;
+        left: 40px;
+        top: 20px;
+        overflow-y: hidden;
+        position: relative;
+        flex-direction: column;
+        height: 250px;
+        width: 200px;
+        border-radius: 20px;
+        filter: drop-shadow(5px 5px 5px black);
+    }
+    #container10 .box{
+        position: relative;
+        margin: 50px;
+        left: 150px;
+        top: 25px;
+        display: inline-flex;
+        justify-content: space-between;
+        filter: drop-shadow(7px -7px 5px black);
+    }
+    #container10 .box img{
+      height: 300px;
+      width: 250px;
+      border-radius: 20px;
+      
+    }
+    #container8 .box img, #container9 .box img, #container10 .box img{
+        filter: grayscale(100%);
+    }
+    #container8 .box img:hover,#container9 .box img:hover, #container10 .box img:hover{
+        filter: grayscale(0%);
+    }
+    #container8 .name,#container9 .name{
+        letter-spacing: 2px;
+        left: 110px;
+        margin-right: 140px;
+        position: relative;
+        display: inline-flex; 
+        justify-content: space-between;    
+    }
+    footer{
+        background-image: linear-gradient(to right,black,#230826,#320338,rgb(19, 17, 17));
+    }
+    footer #icons{
+        left: 40%;
+        position: relative;
+        margin: 20px;
+        display: inline-flex;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: #711c7c;
+        filter: drop-shadow(5px 5px 5px rgba(0, 0, 0, 0.836));
+    }  
+    footer #icons:hover{
+        background-color: #53064cc2;
+    }
+    footer #icons img{
+        padding: 20%;
+        
+    }
+
+    
+    
