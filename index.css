@@ -74,6 +74,7 @@
         
     }
     .container{
+        width : 100%;
         top: 22%;
         left: 11%;
         position: relative;
