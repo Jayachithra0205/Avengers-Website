@@ -275,6 +275,10 @@
         padding: 20%;
         
     }
-
+@media only screen and (max-width:620px){
+   .section, .container{
+      width:100%;
+   }
+}
     
     
